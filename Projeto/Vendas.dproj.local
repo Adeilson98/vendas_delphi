@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/06/28 20:37:40.467,=C:\Users\Adeilson Silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 20:38:14.580,C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\Forms\uMain.pas=C:\Users\Adeilson Silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/28 20:38:14.580,C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\Forms\uMain.dfm=C:\Users\Adeilson Silva\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/28 20:38:36.142,C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\Projeto\Vendas.dproj=C:\Users\Adeilson Silva\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
