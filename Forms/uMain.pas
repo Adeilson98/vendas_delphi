@@ -25,6 +25,7 @@ type
     N4: TMenuItem;
     Vendapordata1: TMenuItem;
     procedure opt_closeClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,6 +38,40 @@ var
 implementation
 
 {$R *.dfm}
+
+uses uDTM_Conexao; //aqui me cominico com a unit de conexao
+
+//no código abaixo que vai até a linha 50 eu estou fazendo uma conexão com o banco de dados sempre que o formulário é executado
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+  dtmConexao := TdtmConexao.Create(Self); //a partir dessa linha eu consigo utilizar todas as variáveis da Unit Conexao
+
+  with dtmConexao.dbConection do
+  begin
+      SQLHourGlass:=true;
+      Protocol := 'mssql';
+      LibraryLocation:= 'C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\ntwdblib.dll';
+      Hostname:= 'NINO\SQLEXPRESS';
+      Port:= 1433;
+      User:='';
+      Password :='';
+      Database:= 'vendas';
+      Connected:=true;
+ end;
+
+  {
+  dtmConexao.dbConection.SQLHourGlass:=true;
+  dtmConexao.dbConection.Protocol := 'mssql';
+  dtmConexao.dbConection.LibraryLocation:= 'C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\ntwdblib.dll';
+  dtmConexao.dbConection.Hostname:= 'NINO\SQLEXPRESS';
+  dtmConexao.dbConection.Port:= 1433;
+  dtmConexao.dbConection.User:='';
+  dtmConexao.dbConection.Password :='';
+  dtmConexao.dbConection.Database:= 'vendas';
+  dtmConexao.dbConection.Connected:=true;
+
+  }
+end;
 
 procedure TfrmMain.opt_closeClick(Sender: TObject);
 begin

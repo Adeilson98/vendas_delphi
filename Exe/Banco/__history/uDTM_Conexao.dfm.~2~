@@ -1,0 +1,25 @@
+object dtmConexao: TdtmConexao
+  OldCreateOrder = False
+  Height = 253
+  Width = 388
+  object dbConection: TZConnection
+    ControlsCodePage = cCP_UTF16
+    AutoEncodeStrings = True
+    Catalog = ''
+    Properties.Strings = (
+      'controls_cp=CP_UTF16')
+    Connected = True
+    SQLHourGlass = True
+    HostName = 'NINO\SQLEXPRESS'
+    Port = 0
+    Database = 'vendas'
+    User = ''
+    Password = ''
+    Protocol = 'mssql'
+    LibraryLocation = 
+      'C:\Users\Adeilson Silva\Desktop\sistema_vendas_delphi\ntwdblib.d' +
+      'll'
+    Left = 56
+    Top = 72
+  end
+end
